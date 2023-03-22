@@ -1,0 +1,15 @@
+C:\Users\david\source\repos\CuestionariosV3\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\david\source\repos\CuestionariosV3\Negocio\bin\Debug\Negocio.dll
+C:\Users\david\source\repos\CuestionariosV3\Negocio\bin\Debug\Negocio.pdb
+C:\Users\david\source\repos\CuestionariosV3\Negocio\bin\Debug\DbCuestionarios.dll
+C:\Users\david\source\repos\CuestionariosV3\Negocio\bin\Debug\EntityFramework.dll
+C:\Users\david\source\repos\CuestionariosV3\Negocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\david\source\repos\CuestionariosV3\Negocio\bin\Debug\DbCuestionarios.pdb
+C:\Users\david\source\repos\CuestionariosV3\Negocio\bin\Debug\DbCuestionarios.dll.config
+C:\Users\david\source\repos\CuestionariosV3\Negocio\bin\Debug\EntityFramework.xml
+C:\Users\david\source\repos\CuestionariosV3\Negocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\david\source\repos\CuestionariosV3\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\CuestionariosV3\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\CuestionariosV3\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\david\source\repos\CuestionariosV3\Negocio\obj\Debug\Negocio.dll
+C:\Users\david\source\repos\CuestionariosV3\Negocio\obj\Debug\Negocio.pdb

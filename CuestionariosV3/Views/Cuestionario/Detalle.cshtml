@@ -1,0 +1,93 @@
+﻿@model CuestionariosV3.Models.DetalleCuestionarioViewModel
+
+<p>Título: @Model.Cuestionario.Titulo</p>
+<h1>Detalle del Cuestionario</h1>
+
+@using (Html.BeginForm("Index", "Cuestionarios", FormMethod.Post))
+{
+    @foreach (var pregunta in Model.Preguntas)
+    {
+        <h2>@pregunta.Pregunta</h2>
+        <ul>
+            @foreach (var respuesta in pregunta.Respuestas)
+            {
+                <li>
+                    <label>
+                        <input type="radio" name="@pregunta.IdPregunta" value="@respuesta.IdRespuesta" onchange="console.log('Respuesta seleccionada: ' + this.value)" />
+                        @respuesta.Respuesta
+                    </label>
+                </li>
+            }
+        </ul>
+    }
+
+    <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+
+}
+
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cuestionario</th>
+            <th>Pregunta</th>
+            <th>Respuesta Correcta</th>
+        </tr>
+    </thead>
+
+
+    @foreach (var item in Model.Preguntas)
+    {
+        <tr>
+            <td>
+                @item.IdPregunta
+            </td>
+            <td>
+                @switch (item.IdCuestionario)
+                {
+                    case 1:
+                        @:"Programacion"
+                        break;
+                    case 2:
+                        @:"Ingles"
+                        break;
+                    case 3:
+                        @:"Historia"
+                        break;
+                    case 4:
+                        @:"Geografia"
+                        break;
+                    default:
+                        @:"Desconocido"
+                        break;
+                }
+            </td>
+            <td>
+                @item.Pregunta
+            </td>
+            <td>
+                @item.RespuestaCorrecta
+            </td>
+        </tr>
+    }
+
+</table>
+<script>
+    $('form').submit(function (event) {
+        // obtenemos todas las preguntas del formulario
+        var preguntas = $('h2');
+
+        // iteramos sobre cada pregunta y verificamos que se haya seleccionado una respuesta
+        for (var i = 0; i < preguntas.length; i++) {
+            var pregunta = preguntas[i];
+            var respuestaSeleccionada = $(pregunta).next('ul').find('input[type="radio"]:checked');
+
+            if (respuestaSeleccionada.length === 0) {
+                swal("Oops!", 'Debe seleccionar una respuesta para la pregunta: ' + $(pregunta).text(), "error");
+                event.preventDefault();
+                return false;
+            }
+        }
+    });
+</script>

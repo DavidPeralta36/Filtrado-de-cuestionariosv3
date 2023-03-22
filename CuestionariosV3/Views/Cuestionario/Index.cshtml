@@ -1,0 +1,57 @@
+﻿@model IEnumerable<DbCuestionarios.Cuestionarios>
+
+@{
+    ViewData["Title"] = "Cuestionarios";
+}
+
+<h1>Cuestionarios</h1>
+
+<form asp-controller="Cuestionario" asp-action="Detalle">
+    <div class="form-group">
+        <label for="cuestionarios">Seleccionar Cuestionario:</label>
+        <select id="cuestionarios" name="idCuestionario" class="form-control">
+            @foreach (var cuestionario in Model)
+            {
+                <option value="@cuestionario.IdCuestionario">@cuestionario.Titulo</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Ver detalles</button>
+</form>
+
+<h2>Lista de personas</h2>
+
+<a class="btn btn-warning" asp-action="Create">Agregar un nuevo registro</a>
+
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cuestionario</th>
+            <th>Descripcion</th>
+            <th>Fecha de creacion</th>
+        </tr>
+    </thead>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.IdCuestionario
+            </td>
+            <td>
+                @item.Titulo
+            </td>
+            <td>
+                @item.Descripcion
+            </td>
+            <td>
+                @item.FechaCreacion
+            </td>
+        </tr>
+    }
+
+</table>
+</div>

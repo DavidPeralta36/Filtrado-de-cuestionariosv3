@@ -1,0 +1,12 @@
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\bin\Debug\DbCuestionarios.dll.config
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\bin\Debug\DbCuestionarios.dll
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\bin\Debug\DbCuestionarios.pdb
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\bin\Debug\EntityFramework.dll
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\bin\Debug\EntityFramework.xml
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\obj\Debug\DbCuestionarios.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\obj\Debug\DbCuestionarios.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\obj\Debug\DbCuestionarios.csproj.CopyComplete
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\obj\Debug\DbCuestionarios.dll
+C:\Users\david\source\repos\CuestionariosV3\DbCuestionarios\obj\Debug\DbCuestionarios.pdb
